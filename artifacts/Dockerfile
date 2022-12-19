@@ -77,6 +77,9 @@ ENV i18n_zip_path=${base_path}/libs-release-local/i18n
 # environment variable for tech5 jar path
 ENV tech5_zip_path=${base_path}/libs-release-local/sdk/tech5
 
+# environment variable for thales jar path
+ENV thales_zip_path=${base_path}/libs-release-local/sdk/thales
+
 # environment variable for Clamav dependency
 ENV clamav_path=${base_path}/libs-release-local/clamav
 
@@ -95,7 +98,7 @@ ENV prversion=1.2.0.1-B1
 
 ENV master_template_path=${base_path}/libs-release-local/master-templates
 
-# environment variable for maven central mosip artifacts 
+# environment variable for maven central mosip artifacts
 ENV release_maven_path=https://repo1.maven.org/maven2/io/mosip
 
 # environment variable for maven central auth adapter. In case released uncomment this and comment out below duplicate one.
@@ -110,7 +113,7 @@ ENV biosdk_client_url_env=${release_maven_path}/biosdk/biosdk-client/${prversion
 ENV demosdk_jar_url_env=${release_maven_path}/demosdk/demosdk/${mrversion}/demosdk-${mrversion}-jar-with-dependencies.jar
 #ENV demosdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/demosdk/demosdk/${sversion}/demosdk-1.2.0.1-20220317.100513-9-jar-with-dependencies.jar
 
-# environment variable for msg91_jar url. 
+# environment variable for msg91_jar url.
 ENV sms_msg91_url_env=${release_maven_path}/kernel/kernel-smsserviceprovider-msg91/${prversion}/kernel-smsserviceprovider-msg91-${prversion}.jar
 #ENV sms_msg91_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/kernel/kernel-smsserviceprovider-msg91/${sversion}/kernel-smsserviceprovider-msg91-1.2.0.1-20220718.062805-7.jar
 
@@ -132,7 +135,7 @@ ENV sdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshot
 #ENV sdk_jar_url_env=${release_maven_path}/mock/sdk/mock-sdk/${rversion}/mock-sdk-${rversion}.jar
 ENV jpeg_extractor_sdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/mock/sdk/mock-sdk-jpeg-extractor/1.2.0.1-SNAPSHOT/mock-sdk-jpeg-extractor-1.2.0.1-20220922.120649-17-jar-with-dependencies.jar
 
-# environment variable for cache URL 
+# environment variable for cache URL
 ENV cache_url_env=https://repo1.maven.org/maven2/com/hazelcast/hazelcast-all/3.12.12/hazelcast-all-3.12.12.jar
 
 # environment variable for child authentication filter jar URL
@@ -173,6 +176,8 @@ COPY /src/i18n/pre-registration-i18n-bundle/*  ${work_dir}/pre-registration-i18n
 COPY /src/master-templates/* ${work_dir}/master-templates/
 
 COPY /src/sdk/tech5/* ${tech5_zip_path}/
+
+COPY /src/sdk/thales/* ${thales_zip_path}/
 
 COPY /src/impl/* ${custom_zip_path}/
 
