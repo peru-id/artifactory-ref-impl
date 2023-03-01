@@ -94,6 +94,8 @@ ENV custom_zip_path=${base_path}/libs-release-local/impl
 # environment variable for child auth filter jar path
 ENV child_auth_filter_jar_path=${base_path}/libs-release-local/io/mosip/authentication/authentication-ref-impl
 
+ENV esignet_auth_wrapper_lib_zip_path=${base_path}/libs-release-local/esignet/esignet-auth-wrapper
+
 # environment variable for jar version to be downloaed, this needed to be passed buildtime
 ENV sversion=1.2.0.1-SNAPSHOT
 ENV mrversion=1.2.0
@@ -105,16 +107,16 @@ ENV master_template_path=${base_path}/libs-release-local/master-templates
 ENV release_maven_path=https://repo1.maven.org/maven2/io/mosip
 
 # environment variable for maven central auth adapter. In case released uncomment this and comment out below duplicate one.
-ENV auth_adapter_jar_url_env=${release_maven_path}/kernel/kernel-auth-adapter/1.2.0.1-B2/kernel-auth-adapter-1.2.0.1-B2.jar
-#ENV auth_adapter_jar_url_env=https://oss.sonatype.org/content/repositories/snapshots/io/mosip/kernel/kernel-auth-adapter/${sversion}/kernel-auth-adapter-1.2.0.1-20220920.044110-25.jar
+#ENV auth_adapter_jar_url_env=${release_maven_path}/kernel/kernel-auth-adapter/1.2.0.1-B2/kernel-auth-adapter-1.2.0.1-B2.jar
+ENV auth_adapter_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/kernel/kernel-auth-adapter/1.2.1-SNAPSHOT/kernel-auth-adapter-1.2.1-20230220.085503-59.jar
 
 # environment variable for biosdk client jar URL
-ENV biosdk_client_url_env=${release_maven_path}/biosdk/biosdk-client/${prversion}/biosdk-client-${prversion}-jar-with-dependencies.jar
-#ENV biosdk_client_url_env=https://oss.sonatype.org/content/repositories/snapshots/io/mosip/biosdk/biosdk-client/1.2.0.1-SNAPSHOT/biosdk-client-1.2.0.1-20220719.030153-21-jar-with-dependencies.jar
+#ENV biosdk_client_url_env=${release_maven_path}/biosdk/biosdk-client/${prversion}/biosdk-client-${prversion}-jar-with-dependencies.jar
+ENV biosdk_client_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/biosdk/biosdk-client/1.2.1-SNAPSHOT/biosdk-client-1.2.1-20220628.121238-7-jar-with-dependencies.jar
 
 # environment variable for demosdk jar URL
-ENV demosdk_jar_url_env=${release_maven_path}/demosdk/demosdk/${mrversion}/demosdk-${mrversion}-jar-with-dependencies.jar
-#ENV demosdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/demosdk/demosdk/${sversion}/demosdk-1.2.0.1-20220317.100513-9-jar-with-dependencies.jar
+#ENV demosdk_jar_url_env=${release_maven_path}/demosdk/demosdk/${mrversion}/demosdk-${mrversion}-jar-with-dependencies.jar
+ENV demosdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/demosdk/demosdk/1.2.1-SNAPSHOT/demosdk-1.2.1-20220628.121926-5.jar
 
 # environment variable for msg91_jar url.
 ENV sms_msg91_url_env=${release_maven_path}/kernel/kernel-smsserviceprovider-msg91/${prversion}/kernel-smsserviceprovider-msg91-${prversion}.jar
@@ -132,25 +134,29 @@ ENV clamav_client_url_env=https://oss.sonatype.org/service/local/repositories/re
 
 # environment variable for sdk url
 #ENV sdk_jar_url_env=${release_maven_path}/mock/sdk/mock-sdk/${mrversion}/mock-sdk-${mrversion}.jar
-ENV sdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/mock/sdk/mock-sdk/1.2.0-SNAPSHOT/mock-sdk-1.2.0-20220922.120614-63.jar
+ENV sdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/mock/sdk/mock-sdk/1.2.1-SNAPSHOT/mock-sdk-1.2.1-20230222.061101-63.jar
 
 # environment variable for sdk url
 #ENV sdk_jar_url_env=${release_maven_path}/mock/sdk/mock-sdk/${rversion}/mock-sdk-${rversion}.jar
-ENV jpeg_extractor_sdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/mock/sdk/mock-sdk-jpeg-extractor/1.2.0.1-SNAPSHOT/mock-sdk-jpeg-extractor-1.2.0.1-20220922.120649-17-jar-with-dependencies.jar
+ENV jpeg_extractor_sdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/mock/sdk/mock-sdk-jpeg-extractor/1.2.1-SNAPSHOT/mock-sdk-jpeg-extractor-1.2.1-20230222.061140-37-jar-with-dependencies.jar
 
 # environment variable for cache URL
 ENV cache_url_env=https://repo1.maven.org/maven2/com/hazelcast/hazelcast-all/3.12.12/hazelcast-all-3.12.12.jar
 
 # environment variable for child authentication filter jar URL
 ENV child_auth_filter_jar_url=${release_maven_path}/authentication/authentication-childauthfilter-impl/${prversion}/authentication-childauthfilter-impl-${prversion}.jar
-#ENV child_auth_filter_jar_url=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/authentication/authentication-childauthfilter-impl/${sversion}/authentication-childauthfilter-impl-1.2.0.1-20220718.062704-9.jar
+#ENV child_auth_filter_jar_url=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/authentication/authentication-childauthfilter-impl/1.2.1-SNAPSHOT/authentication-childauthfilter-impl-1.2.1-20220629.071004-13.jar
 
 # environment variable for IdP authentication wrapper jar URL
 #ENV auth_wrapper_url_env=https://oss.sonatype.org/content/repositories/snapshots/io/mosip/idp/authentication-wrapper/${sidp_auth_wrapper_version}/authentication-wrapper-0.9.0-20230103.073852-1.jar
 ENV auth_wrapper_url_env=https://repo1.maven.org/maven2/io/mosip/idp/authentication-wrapper/0.9.0/authentication-wrapper-0.9.0.jar
 
+# environment variable for esignet authentication wrapper jar URL
+#ENV esignet_auth_wrapper_url_env=https://oss.sonatype.org/content/repositories/snapshots/io/mosip/idp/authentication-wrapper/${sidp_auth_wrapper_version}/authentication-wrapper-0.9.0-20230103.073852-1.jar
+ENV esignet_auth_wrapper_url_env=https://repo1.maven.org/maven2/io/mosip/idp/authentication-wrapper/0.9.0/authentication-wrapper-0.9.0.jar
+
 # Create all the Jar paths
-RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk ${biosdk_lib_zip_path}/biosdk-lib ${cache_path} ${ida_sh_path} ${hsm_client_path} ${kernel_jar_path} ${test_jar_path} ${idobject_jar_path} ${sdk_path} ${icu4j_jar_path} ${clamav_path} ${i18n_zip_path} ${child_auth_filter_jar_path} ${jpeg_sdk_path} ${jpegsdk_lib_zip_path}/jpeg-sdk-lib ${base_path}/libs-release-local/reg-client ${master_template_path} ${custom_zip_path} ${idp_auth_wrapper_jar_path}
+RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk ${biosdk_lib_zip_path}/biosdk-lib ${cache_path} ${ida_sh_path} ${hsm_client_path} ${kernel_jar_path} ${test_jar_path} ${idobject_jar_path} ${sdk_path} ${icu4j_jar_path} ${clamav_path} ${i18n_zip_path} ${child_auth_filter_jar_path} ${jpeg_sdk_path} ${jpegsdk_lib_zip_path}/jpeg-sdk-lib ${base_path}/libs-release-local/reg-client ${master_template_path} ${custom_zip_path} ${idp_auth_wrapper_jar_path} ${esignet_auth_wrapper_lib_zip_path}
 
 # Copy all the respective jars to the location
 
@@ -226,6 +232,11 @@ RUN wget ${auth_adapter_jar_url_env} -O ${kernel_jar_path}/kernel-auth-adapter.j
 echo "Downloaded auth adapter jar" &&\
 
 wget ${auth_wrapper_url_env} -O ${idp_auth_wrapper_jar_path}/authentication-wrapper.jar &&\
+
+echo "Downloaded IDP auth wrapper jar" &&\
+
+
+wget ${esignet_auth_wrapper_url_env} -O ${esignet_auth_wrapper_lib_zip_path}/ &&\
 
 echo "Downloaded IDP auth wrapper jar" &&\
 
