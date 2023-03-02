@@ -111,12 +111,12 @@ ENV release_maven_path=https://repo1.maven.org/maven2/io/mosip
 ENV auth_adapter_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/kernel/kernel-auth-adapter/1.2.1-SNAPSHOT/kernel-auth-adapter-1.2.1-20230220.085503-59.jar
 
 # environment variable for biosdk client jar URL
-#ENV biosdk_client_url_env=${release_maven_path}/biosdk/biosdk-client/${prversion}/biosdk-client-${prversion}-jar-with-dependencies.jar
-ENV biosdk_client_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/biosdk/biosdk-client/1.2.1-SNAPSHOT/biosdk-client-1.2.1-20220628.121238-7-jar-with-dependencies.jar
+ENV biosdk_client_url_env=${release_maven_path}/biosdk/biosdk-client/${prversion}/biosdk-client-${prversion}-jar-with-dependencies.jar
+#ENV biosdk_client_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/biosdk/biosdk-client/1.2.1-SNAPSHOT/biosdk-client-1.2.1-20220628.121238-7-jar-with-dependencies.jar
 
 # environment variable for demosdk jar URL
-#ENV demosdk_jar_url_env=${release_maven_path}/demosdk/demosdk/${mrversion}/demosdk-${mrversion}-jar-with-dependencies.jar
-ENV demosdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/demosdk/demosdk/1.2.1-SNAPSHOT/demosdk-1.2.1-20220628.121926-5.jar
+ENV demosdk_jar_url_env=${release_maven_path}/demosdk/demosdk/${mrversion}/demosdk-${mrversion}-jar-with-dependencies.jar
+#ENV demosdk_jar_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/demosdk/demosdk/1.2.1-SNAPSHOT/demosdk-1.2.1-20220628.121926-5.jar
 
 # environment variable for msg91_jar url.
 ENV sms_msg91_url_env=${release_maven_path}/kernel/kernel-smsserviceprovider-msg91/${prversion}/kernel-smsserviceprovider-msg91-${prversion}.jar
