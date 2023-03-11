@@ -319,7 +319,7 @@ echo "folder demosdk deleted" &&\
 
 wget ${child_auth_filter_jar_url} -O ${child_auth_filter_jar_path}/authentication-childauthfilter-impl.jar &&\
 
-echo "Downloaded Child Auth Filter Jar"
+echo "Downloaded Child Auth Filter Jar" &&\
 
 wget ${esignet_mock_wrapper_url_env} -O ${esignet_wrapper_zip_path}/esignet-wrapper/esignet-mock-wrapper.jar &&\
 
