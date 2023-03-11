@@ -160,10 +160,10 @@ ENV esignet_mock_wrapper_url_env=https://oss.sonatype.org/service/local/reposito
 
 ENV esignet_ida_wrapper_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/authentication/esignet-integration-impl/1.2.1-SNAPSHOT/esignet-integration-impl-1.2.1-20230310.084112-17.jar
 
-ENV esignet_wrapper_zip_path=/usr/share/nginx/html/artifactory/libs-release-local/esignet/esignet-wrapper
+ENV esignet_wrapper_zip_path=/usr/share/nginx/html/artifactory/libs-release-local/esignet
 
 # Create all the Jar paths
-RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk ${biosdk_lib_zip_path}/biosdk-lib ${cache_path} ${ida_sh_path} ${hsm_client_path} ${kernel_jar_path} ${test_jar_path} ${idobject_jar_path} ${sdk_path} ${icu4j_jar_path} ${clamav_path} ${i18n_zip_path} ${child_auth_filter_jar_path} ${jpeg_sdk_path} ${jpegsdk_lib_zip_path}/jpeg-sdk-lib ${base_path}/libs-release-local/reg-client ${master_template_path} ${custom_zip_path} ${idp_auth_wrapper_jar_path} ${esignet_auth_wrapper_lib_zip_path} ${esignet_wrapper_zip_path}
+RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk ${biosdk_lib_zip_path}/biosdk-lib ${cache_path} ${ida_sh_path} ${hsm_client_path} ${kernel_jar_path} ${test_jar_path} ${idobject_jar_path} ${sdk_path} ${icu4j_jar_path} ${clamav_path} ${i18n_zip_path} ${child_auth_filter_jar_path} ${jpeg_sdk_path} ${jpegsdk_lib_zip_path}/jpeg-sdk-lib ${base_path}/libs-release-local/reg-client ${master_template_path} ${custom_zip_path} ${idp_auth_wrapper_jar_path} ${esignet_auth_wrapper_lib_zip_path} ${esignet_wrapper_zip_path}/esignet-wrapper
 
 # Copy all the respective jars to the location
 
