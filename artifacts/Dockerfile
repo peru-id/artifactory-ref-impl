@@ -329,7 +329,7 @@ zip -r -j ${esignet_wrapper_zip_path}/esignet-wrapper.zip ${esignet_wrapper_zip_
 
 echo "zip creation completed" &&\
 
-rm -rf ${esignet_wrapper_zip_path}/esignet-wrapper &&\
+rm -rf ${esignet_wrapper_zip_path}/esignet-wrapper
 
 RUN sed -i -e '/listen/!b' -e '/80;/!b' -e 's/80;/8080;/' /etc/nginx/conf.d/default.conf
 
