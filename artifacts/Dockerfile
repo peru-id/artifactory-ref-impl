@@ -156,8 +156,14 @@ ENV auth_wrapper_url_env=https://repo1.maven.org/maven2/io/mosip/idp/authenticat
 #ENV esignet_auth_wrapper_url_env=https://oss.sonatype.org/content/repositories/snapshots/io/mosip/idp/authentication-wrapper/${sidp_auth_wrapper_version}/authentication-wrapper-0.9.0-20230103.073852-1.jar
 ENV esignet_auth_wrapper_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/idp/authentication-wrapper/1.0.0-SNAPSHOT/authentication-wrapper-1.0.0-20230228.100016-20.jar
 
+ENV esignet_mock_wrapper_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/esignet/mock/mock-esignet-integration-impl/0.0.1-SNAPSHOT/mock-esignet-integration-impl-0.0.1-20230310.092107-13.jar
+
+ENV esignet_ida_wrapper_url_env=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/mosip/authentication/esignet-integration-impl/1.2.1-SNAPSHOT/esignet-integration-impl-1.2.1-20230310.084112-17.jar
+
+ENV esignet_wrapper_zip_path=/usr/share/nginx/html/artifactory/libs-release-local/esignet/esignet-wrapper
+
 # Create all the Jar paths
-RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk ${biosdk_lib_zip_path}/biosdk-lib ${cache_path} ${ida_sh_path} ${hsm_client_path} ${kernel_jar_path} ${test_jar_path} ${idobject_jar_path} ${sdk_path} ${icu4j_jar_path} ${clamav_path} ${i18n_zip_path} ${child_auth_filter_jar_path} ${jpeg_sdk_path} ${jpegsdk_lib_zip_path}/jpeg-sdk-lib ${base_path}/libs-release-local/reg-client ${master_template_path} ${custom_zip_path} ${idp_auth_wrapper_jar_path} ${esignet_auth_wrapper_lib_zip_path}
+RUN mkdir -p ${biosdk_client_zip_path}/biosdk-client ${demosdk_zip_path}/demosdk ${biosdk_lib_zip_path}/biosdk-lib ${cache_path} ${ida_sh_path} ${hsm_client_path} ${kernel_jar_path} ${test_jar_path} ${idobject_jar_path} ${sdk_path} ${icu4j_jar_path} ${clamav_path} ${i18n_zip_path} ${child_auth_filter_jar_path} ${jpeg_sdk_path} ${jpegsdk_lib_zip_path}/jpeg-sdk-lib ${base_path}/libs-release-local/reg-client ${master_template_path} ${custom_zip_path} ${idp_auth_wrapper_jar_path} ${esignet_auth_wrapper_lib_zip_path} ${esignet_wrapper_zip_path}
 
 # Copy all the respective jars to the location
 
@@ -315,6 +321,15 @@ wget ${child_auth_filter_jar_url} -O ${child_auth_filter_jar_path}/authenticatio
 
 echo "Downloaded Child Auth Filter Jar"
 
+wget ${esignet_mock_wrapper_url_env} -O ${esignet_wrapper_zip_path}/esignet-wrapper/esignet-mock-wrapper.jar &&\
+
+wget ${esignet_ida_wrapper_url_env} -O ${esignet_wrapper_zip_path}/esignet-wrapper/esignet-ida-wrapper.jar &&\
+
+zip -r -j ${esignet_wrapper_zip_path}/esignet-wrapper.zip ${esignet_wrapper_zip_path}/esignet-wrapper/* &&\
+
+echo "zip creation completed" &&\
+
+rm -rf ${esignet_wrapper_zip_path}/esignet-wrapper &&\
 
 RUN sed -i -e '/listen/!b' -e '/80;/!b' -e 's/80;/8080;/' /etc/nginx/conf.d/default.conf
 
