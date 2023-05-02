@@ -151,8 +151,6 @@ COPY /src/i18n/idp-i18n-bundle/* ${work_dir}/idp-i18n-bundle/
 
 COPY /src/i18n/oidc-demo-i18n-bundle/*  ${work_dir}/oidc-demo-i18n-bundle/
 
-COPY /src/i18n/pre-registration-i18n-bundle/*  ${work_dir}/pre-registration-i18n-bundle/
-
 COPY /src/i18n/esignet-i18n-bundle/*  ${work_dir}/esignet-i18n-bundle/
 
 COPY /src/i18n/mock-relying-party-i18n-bundle/*  ${work_dir}/mock-relying-party-i18n-bundle/
