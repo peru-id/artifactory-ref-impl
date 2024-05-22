@@ -38,7 +38,7 @@
       "noSort": "true"
     },
     {
-      "name": "name",
+      "name": "names",
       "showInListView": "true",
       "showInSingleView": "true",
       "label": {"eng": "Name","ara": "اسم","fra": "prénom","tam": "பெயர்","hin": "नाम","kan": "ಹೆಸರು", "spa": "Nombre"},
