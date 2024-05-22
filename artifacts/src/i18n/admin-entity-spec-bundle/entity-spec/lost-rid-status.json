@@ -1,6 +1,6 @@
 {
   "auditEventIds": ["ADM-030", "ADM-052"],
-  "names" : ["names", "lastName1", "lastName2"],
+  "names" : ["lastName1", "lastName2", "names"],
   "actionButtons": [
     {
       "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre" ,
@@ -76,26 +76,6 @@
       "ismandatory": "true"
     },
     {
-      "filtername": "names",
-      "filterlabel": {
-        "eng": "First Name",
-        "ara": "الاسم الأول",
-        "fra": "Prénom",
-        "tam": "முதல் பெயர்",
-        "hin": "पहला नाम",
-        "kan": "ಮೊದಲ ಹೆಸರು",
-        "spa": "Prenombres"
-      },
-      "filterType": "equals",
-      "autocomplete": "false",
-      "dropdown": "false",
-      "datePicker": "false",
-      "apiName": "lostRid",
-      "fieldName": "name",
-      "methodCallName": "",
-      "ismandatory": "true"
-    },
-    {
       "filtername": "lastName1",
       "filterlabel": {
         "eng": "Middle Name",
@@ -125,6 +105,26 @@
         "hin": "उपनाम",
         "kan": "ಕೊನೆಯ ಹೆಸರು",
         "spa": "Segundo Apellido"
+      },
+      "filterType": "equals",
+      "autocomplete": "false",
+      "dropdown": "false",
+      "datePicker": "false",
+      "apiName": "lostRid",
+      "fieldName": "name",
+      "methodCallName": "",
+      "ismandatory": "true"
+    },
+    {
+      "filtername": "names",
+      "filterlabel": {
+        "eng": "First Name",
+        "ara": "الاسم الأول",
+        "fra": "Prénom",
+        "tam": "முதல் பெயர்",
+        "hin": "पहला नाम",
+        "kan": "ಮೊದಲ ಹೆಸರು",
+        "spa": "Prenombres"
       },
       "filterType": "equals",
       "autocomplete": "false",
