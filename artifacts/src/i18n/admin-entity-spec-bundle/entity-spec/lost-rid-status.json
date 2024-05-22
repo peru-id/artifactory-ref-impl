@@ -1,6 +1,5 @@
 {
   "auditEventIds": ["ADM-030", "ADM-052"],
-  "names" : ["names", "lastName1", "lastName2"],
   "actionButtons": [
     {
       "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre" ,
