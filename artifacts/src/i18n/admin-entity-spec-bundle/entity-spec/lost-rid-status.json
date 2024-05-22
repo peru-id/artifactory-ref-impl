@@ -18,7 +18,7 @@
   ],
   "columnsToDisplay": [
     {
-      "": "registrationId",
+      "name": "registrationId",
       "showInListView": "True",
       "label": { "eng": "Registration Id", "ara": "معرف تسجيل", "fra": "ID d'enregistrement" , "hin": "पंजीयन पहचान", "kan": "ನೋಂದಣಿ ಐಡಿ", "tam": "பதிவு ஐடி", "spa": "ID de Registro"},
       "sortOrder": "3",
