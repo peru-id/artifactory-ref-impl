@@ -1,6 +1,6 @@
 {
   "auditEventIds": ["ADM-030", "ADM-052"],
-  "names" : ["firstName", "middleName", "lastName"],
+  "names" : ["names", "lastName1", "lastName2"],
   "actionButtons": [
     {
       "buttonName": { "eng": "Filter", "ara": "تصفيه", "fra": "filtre" ,
@@ -18,7 +18,7 @@
   ],
   "columnsToDisplay": [
     {
-      "name": "registrationId",
+      "": "registrationId",
       "showInListView": "True",
       "label": { "eng": "Registration Id", "ara": "معرف تسجيل", "fra": "ID d'enregistrement" , "hin": "पंजीयन पहचान", "kan": "ನೋಂದಣಿ ಐಡಿ", "tam": "பதிவு ஐடி", "spa": "ID de Registro"},
       "sortOrder": "3",
@@ -76,14 +76,15 @@
       "ismandatory": "true"
     },
     {
-      "filtername": "firstName",
+      "filtername": "names",
       "filterlabel": {
         "eng": "First Name",
         "ara": "الاسم الأول",
         "fra": "Prénom",
         "tam": "முதல் பெயர்",
         "hin": "पहला नाम",
-        "kan": "ಮೊದಲ ಹೆಸರು"
+        "kan": "ಮೊದಲ ಹೆಸರು",
+        "spa": "Prenombres"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -95,14 +96,15 @@
       "ismandatory": "true"
     },
     {
-      "filtername": "middleName",
+      "filtername": "lastName1",
       "filterlabel": {
         "eng": "Middle Name",
         "ara": "الاسم الأوسط",
         "fra": "Deuxième prénom",
         "tam": "நடுத்தர பெயர்",
         "hin": "मध्य नाम",
-        "kan": "ಮಧ್ಯದ ಹೆಸರು"
+        "kan": "ಮಧ್ಯದ ಹೆಸರು",
+        "spa": "Primer Apellido"
       },
       "filterType": "equals",
       "autocomplete": "false",
@@ -114,14 +116,15 @@
       "ismandatory": "false"
     },
     {
-      "filtername": "lastName",
+      "filtername": "lastName2",
       "filterlabel": {
         "eng": "Last Name",
         "ara": "اسم العائلة",
         "fra": "Nom de famille",
         "tam": "கடைசி பெயர்",
         "hin": "उपनाम",
-        "kan": "ಕೊನೆಯ ಹೆಸರು"
+        "kan": "ಕೊನೆಯ ಹೆಸರು",
+        "spa": "Segundo Apellido"
       },
       "filterType": "equals",
       "autocomplete": "false",
