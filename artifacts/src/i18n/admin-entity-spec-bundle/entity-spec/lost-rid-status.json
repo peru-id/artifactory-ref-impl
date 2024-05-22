@@ -76,7 +76,7 @@
       "ismandatory": "true"
     },
     {
-      "filtername": "names",
+      "filtername": "name",
       "filterlabel": {
         "eng": "First Name",
         "ara": "الاسم الأول",
@@ -85,46 +85,6 @@
         "hin": "पहला नाम",
         "kan": "ಮೊದಲ ಹೆಸರು",
         "spa": "Prenombres"
-      },
-      "filterType": "equals",
-      "autocomplete": "false",
-      "dropdown": "false",
-      "datePicker": "false",
-      "apiName": "lostRid",
-      "fieldName": "name",
-      "methodCallName": "",
-      "ismandatory": "true"
-    },
-    {
-      "filtername": "lastName1",
-      "filterlabel": {
-        "eng": "Middle Name",
-        "ara": "الاسم الأوسط",
-        "fra": "Deuxième prénom",
-        "tam": "நடுத்தர பெயர்",
-        "hin": "मध्य नाम",
-        "kan": "ಮಧ್ಯದ ಹೆಸರು",
-        "spa": "Primer Apellido"
-      },
-      "filterType": "equals",
-      "autocomplete": "false",
-      "dropdown": "false",
-      "datePicker": "false",
-      "apiName": "lostRid",
-      "fieldName": "name",
-      "methodCallName": "",
-      "ismandatory": "false"
-    },
-    {
-      "filtername": "lastName2",
-      "filterlabel": {
-        "eng": "Last Name",
-        "ara": "اسم العائلة",
-        "fra": "Nom de famille",
-        "tam": "கடைசி பெயர்",
-        "hin": "उपनाम",
-        "kan": "ಕೊನೆಯ ಹೆಸರು",
-        "spa": "Segundo Apellido"
       },
       "filterType": "equals",
       "autocomplete": "false",
