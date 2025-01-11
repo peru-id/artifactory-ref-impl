@@ -1,17 +1,6 @@
 name: Artifactory build upon a push
 
-on:
-  release:
-    types: [published]
-  pull_request:
-    types: [opened, reopened, synchronize]
-  push:
-    branches:
-      - master
-      - develop
-      - 1.*
-      - MOSIP*
-      - release*
+on: workflow_dispatch
   
 jobs:
   build-docker-artifactory-server:
@@ -22,7 +11,7 @@ jobs:
             SERVICE_NAME: 'artifactory-server'
       fail-fast: false
     name: ${{ matrix.SERVICE_NAME }}
-    uses: mosip/kattu/.github/workflows/docker-build.yml@master
+    uses: iiitb-pilot/kattu/.github/workflows/docker-build.yml@master
     with:
       SERVICE_LOCATION: ${{ matrix.SERVICE_LOCATION }}
       SERVICE_NAME: ${{ matrix.SERVICE_NAME }}
