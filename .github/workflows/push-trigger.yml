@@ -1,17 +1,6 @@
 name: Artifactory build upon a push
 
-on:
-  release:
-    types: [published]
-  pull_request:
-    types: [opened, reopened, synchronize]
-  push:
-    branches:
-      - master
-      - develop
-      - 1.*
-      - MOSIP*
-      - release*
+on: workflow_dispatch
   
 jobs:
   build-docker-artifactory-server:
