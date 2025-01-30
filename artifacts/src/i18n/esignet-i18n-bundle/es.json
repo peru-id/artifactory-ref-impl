@@ -91,9 +91,13 @@
     "fullName_placeholder": "Nombre completo",
     "dob_placeholder": "Fecha de nacimiento",
     "DNI":"nuDniConsulta",
-    "firstName":"Prenombres",
-    "firstSurName":"Primer Apellido",
-    "secondSurName":"Segundo Apellido",
+    "DNI_placeholder":"nuDniConsulta",
+    "firstName_placeholder":"Prenombres",
+    "firstName":"Ingresar Prenombres",
+    "firstSurName_placeholder":"Primer Apellido",
+    "firstSurName":"Ingresar Primer Apellido",
+    "secondSurName_placeholder":"Segundo Apellido",
+    "secondSurName":"Ingresar Segundo Apellido",
     "dateOfBirth":"Fecha Nacimiento"
   },
   "LoginQRCode": {
