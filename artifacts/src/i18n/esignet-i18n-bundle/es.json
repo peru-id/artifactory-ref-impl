@@ -89,7 +89,12 @@
     "dob": "Ingrese la fecha de nacimiento",
     "policyNumber_placeholder": "Número de póliza",
     "fullName_placeholder": "Nombre completo",
-    "dob_placeholder": "Fecha de nacimiento"
+    "dob_placeholder": "Fecha de nacimiento",
+    "DNI":"nuDniConsulta",
+    "firstName":"Prenombres",
+    "firstSurName":"Primer Apellido",
+    "secondSurName":"Segundo Apellido",
+    "dateOfBirth":"Fecha Nacimiento"
   },
   "LoginQRCode": {
     "scan_with_wallet": "Escanee con {{walletName}} para iniciar sesión",
