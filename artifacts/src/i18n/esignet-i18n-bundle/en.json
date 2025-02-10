@@ -90,11 +90,15 @@
     "policyNumber_placeholder": "Policy Number",
     "fullName_placeholder": "Full Name",
     "dob_placeholder": "DOB",
-    "firstName": "First Names",
-    "firstSurName": "First Surname",
-    "secondSurName": "Second Surname",
+    "firstName": "Enter First Names",
+    "firstName_placeholder": "First Names",
+    "firstSurName": " Enter First Surname",
+    "firstSurName_placeholder": "First Surname",
+    "secondSurName_placeholder": "Second Surname",
+    "secondSurName": "Enter Second Surname",
     "dateOfBirth": "Date of Birth",
-    "DNI":"ConsultaDNI"
+    "DNI":"Enter ConsultaDNI",
+    "DNI_placeholder":"ConsultaDNI"
   },
   "LoginQRCode": {
     "scan_with_wallet": "Scan with {{walletName}} to login",
@@ -322,7 +326,7 @@
     "proof_invalid_iat": "Invalid value in proof payload iat claim.",
     "proof_invalid_nonce": "Invalid value in proof payload nonce claim.",
     "no_attempts_left": "Maximum authentication attempts reached. Please try again later.",
-    "individual_id_blocked": "User temporarily blocked. Please try again after some time.", 
+    "individual_id_blocked": "User temporarily blocked. Please try again after some time.",
     "invalid_state_response": "Invalid state",
     "authCode_missing": "AuthCode Missing",
     "failed_to_validate_captcha": "Failed to validate captcha",

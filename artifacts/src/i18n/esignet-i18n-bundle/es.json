@@ -90,7 +90,7 @@
     "policyNumber_placeholder": "Número de póliza",
     "fullName_placeholder": "Nombre completo",
     "dob_placeholder": "Fecha de nacimiento",
-    "DNI":"nuDniConsulta",
+    "DNI":"Ingresar nuDniConsulta",
     "DNI_placeholder":"nuDniConsulta",
     "firstName_placeholder":"Prenombres",
     "firstName":"Ingresar Prenombres",
