@@ -86,6 +86,7 @@
     "login": "Iniciar sesión",
     "policyNumber": "Ingrese el número de póliza",
     "fullName": "Ingrese el nombre completo",
+    "prenombres":"Ingresar Prenombres";
     "dob": "Ingrese la fecha de nacimiento",
     "policyNumber_placeholder": "Número de póliza",
     "fullName_placeholder": "Nombre completo",
