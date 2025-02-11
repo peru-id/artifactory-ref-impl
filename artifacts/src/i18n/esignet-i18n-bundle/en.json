@@ -97,7 +97,7 @@
     "secondSurName_placeholder": "Second Surname",
     "secondSurName": "Enter Second Surname",
     "dateOfBirth": "Date of Birth",
-    "DNI":"Enter ConsultaDNI",
+    "dni":"Enter ConsultaDNI",
     "DNI_placeholder":"ConsultaDNI"
   },
   "LoginQRCode": {
