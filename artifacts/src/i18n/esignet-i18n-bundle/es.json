@@ -86,13 +86,11 @@
     "login": "Iniciar sesión",
     "policyNumber": "Ingrese el número de póliza",
     "fullName": "Ingrese el nombre completo",
-    "prenombres":"Ingresar Prenombres";
-    "segundoApellido":"SegundoApellido";
     "dob": "Ingrese la fecha de nacimiento",
     "policyNumber_placeholder": "Número de póliza",
     "fullName_placeholder": "Nombre completo",
     "dob_placeholder": "Fecha de nacimiento",
-    "dni":"Ingresar nuDniConsulta",
+    "DNI":"Ingresar nuDniConsulta",
     "DNI_placeholder":"nuDniConsulta",
     "firstName_placeholder":"Prenombres",
     "firstName":"Ingresar Prenombres",
