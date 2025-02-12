@@ -98,7 +98,16 @@
     "firstSurName":"Ingresar Primer Apellido",
     "secondSurName_placeholder":"Segundo Apellido",
     "secondSurName":"Ingresar Segundo Apellido",
-    "dateOfBirth":"Fecha Nacimiento"
+    "dateOfBirth":"Fecha Nacimiento",
+    "dni":"Ingresar nuDniConsulta",
+    "dni_placeholder":"nuDniConsulta",
+    "prenombres_placeholder":"Prenombres",
+    "prenombres":"Ingresar Prenombres",
+    "primerApellido_placeholder":"Primer Apellido",
+    "primerApellido":"Ingresar Primer Apellido",
+    "segundoApellido_placeholder":"Segundo Apellido",
+    "segundoApellido":"Ingresar Segundo Apellido",
+    "fechaNacimiento":"Fecha Nacimiento"
   },
   "LoginQRCode": {
     "scan_with_wallet": "Escanee con {{walletName}} para iniciar sesión",
